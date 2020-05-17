@@ -14,7 +14,7 @@ input.addEventListener("keypress", (evt) => {
       .then((json) => renderWeatherDetails(json));
   }
 });
-
+// Render weather information
 function renderWeatherDetails(json) {
   document.querySelector(".message").textContent = `City Name: ${json.name}`; // choosen city
   //temperature
